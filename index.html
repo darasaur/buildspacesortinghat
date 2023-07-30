@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <! -- made with love by adara (twitter @astro_adara) -->
+
+<head>
+  <meta property="og:title" content="buildspace sorting hat">
+  <meta property="og:description" content="A Sorting Hat for Buildspace's houses.">
+  <meta property="og:image" content="previewimage.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="buildspace sorting hat">
+  <meta name="twitter:description" content="A Sorting Hat for Buildspace's houses.">
+  <meta name="twitter:image" content="previewimage.png">
+
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>buildspace sorting hat</title>
+  <link rel="icon" href="mainicon.PNG" type="image/png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="sortingHat"><img src="classichat.PNG"></div>
+
+    <div class="text">
+      <h1>buildspace<br>sorting hat</h1>
+      <h2>discover your <a href="https://buildspace.so/">buildspace</a> house</h2>
+
+      <button onclick="window.location.href = 'quiz.html';" class="start">take quiz</button> <button class="random"
+        id="randomButton">random</button>
+    </div>
+
+  </div>
+
+  <script>
+
+    let houses = ["gaudmire", "erevald", "alterok", "spectreseek"];
+    let house = ""
+    const randomButton = document.getElementById('randomButton');
+
+    randomButton.addEventListener("click", function () {
+
+      let randomIndex = Math.floor(Math.random() * 4);
+      house = houses[randomIndex];
+
+      if (house === "gaudmire") {
+        window.location.href = "gaudmire.html";
+      } else if (house === "erevald") {
+        window.location.href = "erevald.html";
+      } else if (house === "alterok") {
+        window.location.href = "alterok.html";
+      } else if (house === "spectreseek") {
+        window.location.href = "spectreseek.html";
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>
