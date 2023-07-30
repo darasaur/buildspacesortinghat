@@ -6,13 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let erevald = 0;
   let alterok = 0;
   let spectreseek = 0;
-  let house = ""
-
-  // random house code 
-  //const randomButton = document.getElementById('randomButton');
-  randomButton.addEventListener("click", function() { // generates a random house 
-    //randomHouse();
-  });
+  let house = "";
 
   // this allows the quiz question to be interacted with 
   const quizQuestion = document.getElementById("quizQuestion");
@@ -126,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
       displayHouse();
     } else if (spectreseek >= 2) { // checks to see if spectreseek is the result 
       house = "spectreseek"
+      displayHouse();
     } else {
       randomHouse();
     }
