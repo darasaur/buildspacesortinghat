@@ -3,33 +3,27 @@ html {
   width: 100%;
   background-color: #030303;
   font-family: Inter, sans-serif;
+  overflow: hidden;
 }
 
-body {
-  margin: 200px;
-  padding: 0;
-}
-
-.container {
+.quiz {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 100px;
 }
 
 .question {
-  margin: 0;
+  margin-bottom: 100px;
 }
 
 .buttons {
-  margin-top: 80px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-bottom: 100px;
 }
 
 h1 {
-  min-width: 500px;
+  width: 500px;
   font-weight: 500;
   text-align: center;
   font-size: 32px;
@@ -45,43 +39,54 @@ h1 {
   font-size: 20px;
   font-family: Inter, sans-serif;
   font-weight: 500;
-  min-width: 800px;
-  min-height: 50px;
+  width: 800px;
+  height: 50px;
+}
+
+@media (max-width: 850px) {
+
+  .question {
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    width: 500px;
+    font-size: 32px;
+  }
+
+  .quizButton {
+    font-size: 24px;
+    white-space: wrap;
+    width: 500px;
+    height: 100px;
+  }
+
 }
 
 @media (max-width: 500px) {
 
-  body {
-    margin: 50px;
-    padding: 0;
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 100px;
+  .question {
+    margin-bottom: 20px;
   }
 
   .buttons {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-bottom: 20px;
   }
 
   h1 {
-    margin-top: 100px;
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 300px;
     font-size: 24px;
-    min-width: 350px;
   }
 
   .quizButton {
+    font-size: 16px;
     white-space: wrap;
-    min-width: 350px;
-    min-height: 200px;
-    margin-right: 200px;
+    width: 300px;
+    height: 100px;
   }
 
 }
