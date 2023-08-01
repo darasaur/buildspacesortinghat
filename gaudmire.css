@@ -3,33 +3,35 @@ html {
   width: 100%;
   background-color: #FFB200;
   font-family: Inter, sans-serif;
+  overflow: hidden;
 }
 
-body {
-  margin: 100px;
+/* layout */
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 160px;
+}
+
+.gaudmireHat {
+  margin: 0;
   padding: 0;
 }
 
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.sortingHat {
-  flex: 1;
-}
-
 .text {
-  flex: 1;
+  margin: 0;
+  padding: 0;
 }
 
+/* styling */
 h1 {
   font-size: 84px;
   font-weight: 700;
   line-height: 72px;
   color: white;
-  margin: 0
+  margin: 0;
 }
 
 h2 {
@@ -40,46 +42,94 @@ h2 {
   margin-bottom: 32px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 img {
   width: 700px;
   height: 700px;
 }
 
-@media (max-width: 500px) {
-  body {
-    margin: 0;
-    padding: 0;
+.start {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-color: white;
+  border-radius: 1px;
+  margin: 0px;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.random {
+  color: white;
+  background-color: #030303;
+  width: 120px;
+  height: 40px;
+  border: lightgray solid 1px;
+  border-radius: 1px;
+  margin: 0;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+
+  h1 {
+    font-size: 48px;
+    line-height: 40px;
   }
 
+  h2 {
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
   .container {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin-right: 0;
   }
 
   .gaudmireHat {
-    margin-bottom: 0px;
+    margin-top: 200px;
   }
 
   .text {
-    margin-top: 0px
+    margin-bottom: 300px;
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 48px;
     line-height: 40px;
   }
 
   h2 {
     font-size: 18px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 18px;
+    margin-bottom: 18px;
   }
 
   img {
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
   }
 
 }
