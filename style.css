@@ -134,4 +134,12 @@ img {
     height: 350px;
   }
 
+  .start {
+    font-size: 16px;
+  }
+
+  .random {
+    font-size: 16px; 
+  }
+
 }
